@@ -1,0 +1,49 @@
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+apply plugin:"org.sonarqube"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    jcenter()
+ }
+
+buildscript{
+    repositories{
+        jcenter()
+      
+        dependencies {
+
+            classpath("org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.6.2")
+            classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.41")
+        }
+    }
+
+    dependencies{
+        repositories{
+          jcenter()
+         
+        }
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.41")
+    }
+}
+
+dependencies {
+
+    compile group: 'net.serenity-bdd', name: 'serenity-core', version:'2.0.41'
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay', version:'2.0.41'
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version:'2.0.41'
+    compile group: 'net.serenity-bdd', name: 'serenity-junit', version:'2.0.41'
+    compile group: 'net.serenity-bdd', name: 'serenity-cucumber', version:'1.9.31'
+    compile group: 'org.slf4j', name: 'slf4j-simple', version:'1.7.7'
+
+    testCompile group: 'junit', name: 'junit', version:'4.12'    
+    testCompile 'org.assertj:assertj-core:3.9.1'
+        
+}
+
+gradle.startParameter.continueOnFailure = true
