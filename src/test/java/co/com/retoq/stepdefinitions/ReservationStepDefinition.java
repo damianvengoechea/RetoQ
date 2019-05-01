@@ -2,7 +2,7 @@ package co.com.retoq.stepdefinitions;
 
 import org.openqa.selenium.WebDriver;
 
-import co.com.retoq.tasks.GoTo;
+import co.com.retoq.tasks.DataReserver;
 import co.com.retoq.tasks.OpenTheBrowser;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -25,22 +25,25 @@ public class ReservationStepDefinition {
 		valentina.can(BrowseTheWeb.with(herBrowser));
 	}
 	
-	@Given("^that valentina wants reserve a hotel in \"([^\"]*)\" but the more economic$")
-	public void thatValentinaWantsReserveAHotelInButTheMoreEconomic(String location) {
+	@Given("^that valentina wants reserve a hotel in \"([^\"]*)\", she selects to the dates  \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void thatValentinaWantsReserveAHotelInSheSelectsToTheDatesAnd(String location, String checkIn, String checkOut) {
 		herBrowser.manage().window().maximize();
 		valentina.wasAbleTo(OpenTheBrowser.on());
-		valentina.wasAbleTo(GoTo.locationList(location));
+		valentina.wasAbleTo(DataReserver.locationList(location, checkIn, checkOut));
+		
 	}
 
 	
-	@When("^she select to the dates  (\\d+)/(\\d+)/(\\d+) and (\\d+)/(\\d+)/(\\d+)$")
-	public void sheSelectToTheDatesAnd(int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {
-	   
-	}
 
-	@Then("^she selects the most economical option (\\d+)$")
-	public void sheSelectsTheMostEconomicalOption(int arg1) {
+	@When("^valentina search the hotel more economical$")
+	public void valentinaSearchTheHotelMoreEconomical() {
 	    
 	}
 	
+	
+	@Then("^she selects the most economical option \"([^\"]*)\"$")
+	public void sheSelectsTheMostEconomicalOption(String arg1) {
+	  
+	}
+
 }
