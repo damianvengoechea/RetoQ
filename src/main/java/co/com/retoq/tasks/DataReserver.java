@@ -18,8 +18,7 @@ public class DataReserver implements Task {
 	public DataReserver (String location, String checkIn, String checkOut) {
 		this.location = location;
 		this.checkIn = checkIn;
-		this.checkOut = checkOut;
-		
+		this.checkOut = checkOut;		
 	}
 				
 	@Override
@@ -32,8 +31,7 @@ public class DataReserver implements Task {
 		actor.wasAbleTo(Click.on(HotelSearch.BUTTON_SEARCH));
 	}
 
-	public static DataReserver locationList(String location, String checkIn, String checkOut) {
-		
+	public static DataReserver locationList(String location, String checkIn, String checkOut) {		
 		return instrumented(DataReserver.class,location, checkIn, checkOut);
 	}
 

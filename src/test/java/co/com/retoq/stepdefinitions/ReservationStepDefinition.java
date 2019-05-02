@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import co.com.retoq.tasks.DataReserver;
 import co.com.retoq.tasks.OpenTheBrowser;
+import co.com.retoq.tasks.SaveResultSearch;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -14,7 +15,6 @@ import net.thucydides.core.annotations.Managed;
 
 public class ReservationStepDefinition {
 
-	
 	@Managed(driver = "chrome")
 	private WebDriver herBrowser;
 	
@@ -32,14 +32,11 @@ public class ReservationStepDefinition {
 		valentina.wasAbleTo(DataReserver.locationList(location, checkIn, checkOut));
 		
 	}
-
 	
-
 	@When("^valentina search the hotel more economical$")
 	public void valentinaSearchTheHotelMoreEconomical() {
-	    
-	}
-	
+	    valentina.attemptsTo(SaveResultSearch.resultList());
+	}	
 	
 	@Then("^she selects the most economical option \"([^\"]*)\"$")
 	public void sheSelectsTheMostEconomicalOption(String arg1) {
