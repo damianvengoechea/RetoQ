@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="reservation portal of DX Hotel" skipped="0" tests="1" time="28.14" timestamp="2019-05-02 07:18:51"><testcase name="Select the cheapest hotel of a selected location"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
-co.com.retoq.tasks.SaveResultSearch.performAs(SaveResultSearch.java:31)&#13;
-co.com.retoq.stepdefinitions.ReservationStepDefinition.valentinaSearchTheHotelMoreEconomical(ReservationStepDefinition.java:38)&#13;
-cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
-org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
-org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)&#13;
-org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="reservation portal of DX Hotel" skipped="0" tests="1" time="43.82" timestamp="2019-05-03 04:16:39"><testcase name="Select the cheapest hotel of a selected location"/></testsuite>

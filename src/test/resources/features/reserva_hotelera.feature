@@ -10,5 +10,6 @@ Feature: reservation portal of DX Hotel
     Then she selects the most economical option <totalPay>  
     
     Examples:
-    	|location		|check-in	|check-out|totalPay|
-			|"New York"|"5/05/2019"|"5/10/2019"|"29" |
+    	|location	 |check-in	 |check-out	 |totalPay|
+			|"New York"|"5/05/2019"|"5/10/2019"|"29" 		|
+			

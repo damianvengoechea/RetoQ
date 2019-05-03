@@ -10,7 +10,7 @@ public class ReservationModel {
 	private String numHotels;
 	private String nameHotel;
 	private String nigthPrice;
-	public List<String> lstPrices = new ArrayList<>();
+	public List<Integer> lstPrices = new ArrayList<>();
 	public List<String> lstHotels = new ArrayList<>();
 	
 	public ReservationModel() {}
@@ -19,8 +19,8 @@ public class ReservationModel {
 		
 		this.numNights = dataReservation.get("numNights");
 		this.numHotels = dataReservation.get("numHotels");
-		this.nameHotel = dataReservation.get("name");
-		this.nigthPrice = dataReservation.get("price");
+		this.nameHotel = dataReservation.get("nameHotel");
+		this.nigthPrice = dataReservation.get("nigthPrice");
 		
 	}
 
@@ -56,11 +56,11 @@ public class ReservationModel {
 		this.nigthPrice = nigthPrice;
 	}
 
-	public List<String> getLstPrices() {
+	public List<Integer> getLstPrices() {
 		return lstPrices;
 	}
 
-	public void setLstPrices(List<String> lstPrices) {
+	public void setLstPrices(List<Integer> lstPrices) {
 		this.lstPrices = lstPrices;
 	}
 

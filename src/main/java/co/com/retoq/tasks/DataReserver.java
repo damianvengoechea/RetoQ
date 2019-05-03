@@ -2,6 +2,8 @@ package co.com.retoq.tasks;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+import org.apache.log4j.Logger;
+
 import co.com.retoq.userinterfaces.HotelSearch;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -9,6 +11,8 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
 public class DataReserver implements Task {
+	
+	final Logger log = Logger.getLogger(SaveResultSearch.class);
 	
 	public String location;
 	public String checkIn;
@@ -28,6 +32,7 @@ public class DataReserver implements Task {
 		actor.wasAbleTo(Click.on(HotelSearch.ENTER_CHECK_OUT));
 		actor.wasAbleTo(Enter.theValue(checkOut).into(HotelSearch.ENTER_CHECK_OUT));
 		actor.wasAbleTo(Click.on(HotelSearch.BUTTON_SEARCH));
+		log.info(location);
 	}
 	
 	public static DataReserver locationList(String location, String checkIn, String checkOut) {		

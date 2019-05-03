@@ -2,6 +2,7 @@ package co.com.retoq.stepdefinitions;
 
 import org.openqa.selenium.WebDriver;
 
+import co.com.retoq.tasks.ChooseTheHotel;
 import co.com.retoq.tasks.DataReserver;
 import co.com.retoq.tasks.OpenTheBrowser;
 import co.com.retoq.tasks.SaveResultSearch;
@@ -35,7 +36,11 @@ public class ReservationStepDefinition {
 	
 	@When("^valentina search the hotel more economical$")
 	public void valentinaSearchTheHotelMoreEconomical() {
-	    valentina.attemptsTo(SaveResultSearch.resultList());
+	    valentina.attemptsTo(SaveResultSearch.resultList(),
+	    		ChooseTheHotel.moreEconomical()
+	    		
+	    		
+	    		);
 	}	
 	
 	@Then("^she selects the most economical option \"([^\"]*)\"$")
