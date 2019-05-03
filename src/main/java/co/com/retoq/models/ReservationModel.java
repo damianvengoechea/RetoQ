@@ -10,7 +10,8 @@ public class ReservationModel {
 	private String numHotels;
 	private String nameHotel;
 	private String nigthPrice;
-	private List<ReservationModel> lstReservation = new ArrayList<>();
+	public List<String> lstPrices = new ArrayList<>();
+	public List<String> lstHotels = new ArrayList<>();
 	
 	public ReservationModel() {}
 	
@@ -55,12 +56,20 @@ public class ReservationModel {
 		this.nigthPrice = nigthPrice;
 	}
 
-	public List<ReservationModel> getLstReservation() {
-		return lstReservation;
+	public List<String> getLstPrices() {
+		return lstPrices;
 	}
 
-	public void setLstReservation(List<ReservationModel> lstReservation) {
-		this.lstReservation = lstReservation;
+	public void setLstPrices(List<String> lstPrices) {
+		this.lstPrices = lstPrices;
+	}
+
+	public List<String> getLstHotels() {
+		return lstHotels;
+	}
+
+	public void setLstHotels(List<String> lstHotels) {
+		this.lstHotels = lstHotels;
 	}
 
 	
