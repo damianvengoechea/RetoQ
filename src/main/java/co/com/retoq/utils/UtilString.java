@@ -16,6 +16,12 @@ public class UtilString {
 	        return Integer.parseInt(part1);
 	    }
 
+	    public int splitnumHotels(String numberHotels){
+	        String[] partString = numberHotels.split(" HOTELS");
+	        String part1 = partString[0];
+	        return Integer.parseInt(part1);
+	    }
+	    
 	    public String valueInList(List<Integer> priceHotels){
 	        int value = priceHotels.get(0);
 	        int position = 0;
