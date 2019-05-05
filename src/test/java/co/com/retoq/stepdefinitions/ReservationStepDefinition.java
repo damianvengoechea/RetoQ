@@ -13,6 +13,7 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 
 public class ReservationStepDefinition {
 
@@ -37,14 +38,13 @@ public class ReservationStepDefinition {
 	@When("^valentina search the hotel more economical$")
 	public void valentinaSearchTheHotelMoreEconomical() {
 	    valentina.attemptsTo(SaveResultSearch.resultList(),
-	    		ChooseTheHotel.moreEconomical()
-	    		
-	    		
+	    		ChooseTheHotel.moreEconomical()	    		
 	    		);
 	}	
 	
 	@Then("^she selects the most economical option \"([^\"]*)\"$")
-	public void sheSelectsTheMostEconomicalOption(String arg1) {
+	public void sheSelectsTheMostEconomicalOption(String totalPay) {
+		//valentina.should(seeThat);
 	  
 	}
 

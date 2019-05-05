@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="reservation portal of DX Hotel" skipped="0" tests="3" time="93.17" timestamp="2019-05-05 11:56:43"><testcase name="Select the cheapest hotel of a selected location"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="reservation portal of DX Hotel" skipped="0" tests="5" time="147.38" timestamp="2019-05-05 01:16:41"><testcase name="Select the cheapest hotel of a selected location"/></testsuite>

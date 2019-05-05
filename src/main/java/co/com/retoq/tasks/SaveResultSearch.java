@@ -69,16 +69,12 @@ public class SaveResultSearch implements Task{
 				String[] partOfString = lessPrice.split(" ");
 	            String part1 = partOfString[0];
 	            String part2 = partOfString[1];
-	            String nameHotelMoreEconomical = reservation.getLstHotels().get(Integer.parseInt(part2));
-	            Integer priceMoreEconomical = reservation.getLstPrices().get(Integer.parseInt(part2));
-	            log.info(nameHotelMoreEconomical);
-	            log.info(priceMoreEconomical);	            
+	            String nameHotelMoreEconomical = reservation.getLstHotels().get(Integer.parseInt(part2));        
 	            actor.remember(ResultSearch.PRICE_HOTEL_CONSTANT, part1);
 	            actor.remember(ResultSearch.NAME_HOTEL_CONSTANT,nameHotelMoreEconomical);	           
 	}
 		
-	public static SaveResultSearch resultList() {
-		
+	public static SaveResultSearch resultList() {		
 		return instrumented(SaveResultSearch.class);
 	}
 	
