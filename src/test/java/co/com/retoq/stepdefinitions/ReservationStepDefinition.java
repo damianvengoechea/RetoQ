@@ -2,6 +2,7 @@ package co.com.retoq.stepdefinitions;
 
 import org.openqa.selenium.WebDriver;
 
+import co.com.retoq.questions.Reserver;
 import co.com.retoq.tasks.ChooseTheHotel;
 import co.com.retoq.tasks.DataReserver;
 import co.com.retoq.tasks.OpenTheBrowser;
@@ -14,6 +15,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static org.hamcrest.Matchers.hasItems;
 
 public class ReservationStepDefinition {
 
@@ -44,7 +46,7 @@ public class ReservationStepDefinition {
 	
 	@Then("^she selects the most economical option \"([^\"]*)\"$")
 	public void sheSelectsTheMostEconomicalOption(String totalPay) {
-		//valentina.should(seeThat);
+		valentina.should(seeThat(Reserver.totalPayNow(),hasItems(totalPay)));
 	  
 	}
 

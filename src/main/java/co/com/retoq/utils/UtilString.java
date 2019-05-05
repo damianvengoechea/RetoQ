@@ -2,8 +2,13 @@ package co.com.retoq.utils;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
+import co.com.retoq.tasks.SaveResultSearch;
+
 public class UtilString {
 	
+	final Logger log = Logger.getLogger(SaveResultSearch.class);
 	   public int splitString(String priceHotel){
 	        String[] partString = priceHotel.split("\\$");
 	        String part2 = partString[1];
@@ -21,6 +26,14 @@ public class UtilString {
 	        String part1 = partString[0];
 	        return Integer.parseInt(part1);
 	    }
+	    
+	    public int splitTotalPayNow(String totalPayNow){
+	        String[] partString = totalPayNow.split(" .");
+	        String part1 = partString[0];
+	        String part2 = partString[1];
+	        log.info(part2 + part1);
+	        return Integer.parseInt(part2);
+	    }	    
 	    
 	    public String valueInList(List<Integer> priceHotels){
 	        int value = priceHotels.get(0);

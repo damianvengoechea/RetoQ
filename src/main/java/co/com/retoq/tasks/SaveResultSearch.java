@@ -1,7 +1,9 @@
 package co.com.retoq.tasks;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
+
 import org.apache.log4j.Logger;
+
 import co.com.retoq.models.ReservationModel;
 import co.com.retoq.userinterfaces.ResultSearch;
 import co.com.retoq.utils.UtilString;
@@ -24,7 +26,7 @@ public class SaveResultSearch implements Task{
 	        
 	        int daysHotel = utilString.splitNightSleep(ResultSearch.DAYS_IN_HOTEL.resolveFor(actor).getText()) + 1;
 	        int numHotels = utilString.splitnumHotels(ResultSearch.CAPTURE_NUM_HOTELS.resolveFor(actor).getText()) + 3;
-	        	
+	       
 	        if(ResultSearch.NEXT_BUTTON.resolveFor(actor).isVisible()) {
 	        	
 	        	  while(i <= numHotels) {		
