@@ -1,1 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="reservation portal of DX Hotel" skipped="0" tests="5" time="147.38" timestamp="2019-05-05 01:16:41"><testcase name="Select the cheapest hotel of a selected location"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="reservation portal of DX Hotel" skipped="0" tests="1" time="31.53" timestamp="2019-05-05 04:23:54"><testcase name="Select the cheapest hotel of a selected location"><failure message="&#10;Expected: (a collection containing &quot;29&quot;)&#10;     but: a collection containing &quot;29&quot; was null" type="java.lang.AssertionError">
+Expected: (a collection containing "29")
+     but: a collection containing "29" was null</failure><system-err>
+Expected: (a collection containing "29")
+     but: a collection containing "29" was null&#13;
+co.com.retoq.stepdefinitions.ReservationStepDefinition.sheSelectsTheMostEconomicalOption(ReservationStepDefinition.java:49)&#13;
+✽.she selects the most economical option "29"(src/test/resources/features/reserva_hotelera.feature:10)&#13;
+</system-err></testcase></testsuite>

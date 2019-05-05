@@ -129,7 +129,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-05-2019 13:16</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-05-2019 16:23</span>
     <br style="clear:left"/>
 </div>
 
@@ -164,9 +164,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">Select the cheapest hotel of a selected location
+                                <span class="failing-color">Select the cheapest hotel of a selected location
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -187,44 +187,48 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: Expected: (a collection containing '29') but: a collection containing '29' was null</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>co.com.retoq.stepdefinitions.ReservationStepDefinition.sheSelectsTheMostEconomicalOption(ReservationStepDefinition.java:49)<br />✽.she selects the most economical option "29"(src/test/resources/features/reserva_hotelera.feature:10)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource5046318125497402922.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Example #1: {location=&quot;New York&quot;, check-in=&quot;5/05/2019&quot;, check-out=&quot;5/10/2019&quot;, totalPay=&quot;59&quot;}" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Given that valentina wants reserve a hotel in &quot;New York&quot;, she selects to the dates  &quot;5/05/2019&quot; and &quot;5/10/2019&quot;" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Valentina open the browser" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Valentina opens the Dx hotel home" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina opens the Dx hotel home (completed)" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina open the browser (completed)" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina data reserver" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina clicks on Location List" width="1366"/>
-                <img src="fab144320fdfd85b8051d292f59fd9ca892ae8b4736266d9e6de3e6ec6937bff.png" title=" Valentina clicks on Location List (completed)" width="1366"/>
-                <img src="fab144320fdfd85b8051d292f59fd9ca892ae8b4736266d9e6de3e6ec6937bff.png" title=" Valentina clicks on Select Option Location" width="1366"/>
-                <img src="85d30323b827130aef2b352d493a5bc339d6782e2b5f3950f473d381950640cd.png" title=" Valentina clicks on Select Option Location (completed)" width="1366"/>
-                <img src="85d30323b827130aef2b352d493a5bc339d6782e2b5f3950f473d381950640cd.png" title=" Valentina enters '5/05/2019' into Enter Check In" width="1366"/>
-                <img src="d3361139b653f7dca9fd3463c1f37dcbc0c1ab71c87485d9f2973edc9f7481c5.png" title=" Valentina enters '5/05/2019' into Enter Check In (completed)" width="1366"/>
-                <img src="d3361139b653f7dca9fd3463c1f37dcbc0c1ab71c87485d9f2973edc9f7481c5.png" title=" Valentina clicks on Enter Check Out" width="1366"/>
-                <img src="78b47c15b7a9fc0a7c4c060b8c724ef0ee3e46e2099c34e2710a92e4eac9b28c.png" title=" Valentina clicks on Enter Check Out (completed)" width="1366"/>
-                <img src="78b47c15b7a9fc0a7c4c060b8c724ef0ee3e46e2099c34e2710a92e4eac9b28c.png" title=" Valentina enters '5/10/2019' into Enter Check Out" width="1366"/>
-                <img src="2da4099b574fe57e4bb848b2de744614a493b970efb12d160cb54d0597954673.png" title=" Valentina enters '5/10/2019' into Enter Check Out (completed)" width="1366"/>
-                <img src="2da4099b574fe57e4bb848b2de744614a493b970efb12d160cb54d0597954673.png" title=" Valentina clicks on Perform Search" width="1366"/>
-                <img src="da9fc3be0dfc148e2ae238154ffe24db8a127451c56386407fd62bcaabd209d9.png" title=" Valentina clicks on Perform Search (completed)" width="1366"/>
-                <img src="da9fc3be0dfc148e2ae238154ffe24db8a127451c56386407fd62bcaabd209d9.png" title=" Valentina data reserver (completed)" width="1366"/>
-                <img src="da9fc3be0dfc148e2ae238154ffe24db8a127451c56386407fd62bcaabd209d9.png" title=" Given that valentina wants reserve a hotel in &quot;New York&quot;, she selects to the dates  &quot;5/05/2019&quot; and &quot;5/10/2019&quot; (completed)" width="1366"/>
-                <img src="da9fc3be0dfc148e2ae238154ffe24db8a127451c56386407fd62bcaabd209d9.png" title=" When valentina search the hotel more economical" width="1366"/>
-                <img src="da9fc3be0dfc148e2ae238154ffe24db8a127451c56386407fd62bcaabd209d9.png" title=" Valentina save result search" width="1366"/>
-                <img src="1ac36adc00b3252a1a698134fb6423933e52d7056baff3b5745a3401f8e1e468.png" title=" Valentina clicks on Next Button" width="1366"/>
-                <img src="febd9fec5c5ac5f024f9e67f348db7ef074c4e1fb5b85b70e2bd629e9713f1e9.png" title=" Valentina clicks on Next Button (completed)" width="1366"/>
-                <img src="a5cae83ecc0a86902c84c0c0b0a9de1e37fda492f12ec04e055fee048ea1962d.png" title=" Valentina clicks on Next Button" width="1366"/>
-                <img src="946a56ac604400c8cf41f17fa065dc0179c0366876b498520b9f7ce0af94a2a3.png" title=" Valentina clicks on Next Button (completed)" width="1366"/>
-                <img src="1e0aa9c782a24f068912079230074b1f0c27a025fd6ae65b9144ac6c806cf5f3.png" title=" Valentina save result search (completed)" width="1366"/>
-                <img src="1e0aa9c782a24f068912079230074b1f0c27a025fd6ae65b9144ac6c806cf5f3.png" title=" Valentina choose the hotel" width="1366"/>
-                <img src="1e0aa9c782a24f068912079230074b1f0c27a025fd6ae65b9144ac6c806cf5f3.png" title=" Valentina clicks on Button Book it" width="1366"/>
-                <img src="9d13fe6f47c5b0551b8db70a7200b9538fc4e3c3c08c9244b4c5595e070d490e.png" title=" Valentina clicks on Button Book it (completed)" width="1366"/>
-                <img src="9d13fe6f47c5b0551b8db70a7200b9538fc4e3c3c08c9244b4c5595e070d490e.png" title=" Valentina choose the hotel (completed)" width="1366"/>
-                <img src="9d13fe6f47c5b0551b8db70a7200b9538fc4e3c3c08c9244b4c5595e070d490e.png" title=" When valentina search the hotel more economical (completed)" width="1366"/>
-                <img src="9d13fe6f47c5b0551b8db70a7200b9538fc4e3c3c08c9244b4c5595e070d490e.png" title=" Then she selects the most economical option &quot;59&quot;" width="1366"/>
-                <img src="9d13fe6f47c5b0551b8db70a7200b9538fc4e3c3c08c9244b4c5595e070d490e.png" title=" Example #1: {location=&quot;New York&quot;, check-in=&quot;5/05/2019&quot;, check-out=&quot;5/10/2019&quot;, totalPay=&quot;59&quot;} (completed)" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Example #2: {location=&quot;Los Angeles&quot;, check-in=&quot;5/05/2019&quot;, check-out=&quot;5/10/2019&quot;, totalPay=&quot;29&quot;}" width="1366"/>
+                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Example #1: {location=&quot;Los Angeles&quot;, check-in=&quot;5/05/2019&quot;, check-out=&quot;5/10/2019&quot;, totalPay=&quot;29&quot;}" width="1366"/>
                 <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Given that valentina wants reserve a hotel in &quot;Los Angeles&quot;, she selects to the dates  &quot;5/05/2019&quot; and &quot;5/10/2019&quot;" width="1366"/>
                 <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Valentina open the browser" width="1366"/>
                 <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Valentina opens the Dx hotel home" width="1366"/>
@@ -234,135 +238,28 @@
                 <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina clicks on Location List" width="1366"/>
                 <img src="fab144320fdfd85b8051d292f59fd9ca892ae8b4736266d9e6de3e6ec6937bff.png" title=" Valentina clicks on Location List (completed)" width="1366"/>
                 <img src="fab144320fdfd85b8051d292f59fd9ca892ae8b4736266d9e6de3e6ec6937bff.png" title=" Valentina clicks on Select Option Location" width="1366"/>
-                <img src="069f54a6b49550f9daf7b01a3ddfe5514c64500d80d8fd0a024031a8fda69784.png" title=" Valentina clicks on Select Option Location (completed)" width="1366"/>
-                <img src="069f54a6b49550f9daf7b01a3ddfe5514c64500d80d8fd0a024031a8fda69784.png" title=" Valentina enters '5/05/2019' into Enter Check In" width="1366"/>
+                <img src="d74ee48db5eeac51c6f940321193dbb2b2e058562325879ccecac306e1b0e88c.png" title=" Valentina clicks on Select Option Location (completed)" width="1366"/>
+                <img src="d74ee48db5eeac51c6f940321193dbb2b2e058562325879ccecac306e1b0e88c.png" title=" Valentina enters '5/05/2019' into Enter Check In" width="1366"/>
                 <img src="7176461933ec387681edac3de2a1291ab689da366f2435b8ccbddb5e26b2315c.png" title=" Valentina enters '5/05/2019' into Enter Check In (completed)" width="1366"/>
                 <img src="7176461933ec387681edac3de2a1291ab689da366f2435b8ccbddb5e26b2315c.png" title=" Valentina clicks on Enter Check Out" width="1366"/>
                 <img src="45e60a09cbd6b3b28c756b86b9cc7c279c3ff1c4204c26d7984026363a66607a.png" title=" Valentina clicks on Enter Check Out (completed)" width="1366"/>
                 <img src="45e60a09cbd6b3b28c756b86b9cc7c279c3ff1c4204c26d7984026363a66607a.png" title=" Valentina enters '5/10/2019' into Enter Check Out" width="1366"/>
                 <img src="f7cb851fa5f638ca61dcd2ddb99347759620c2c2b0de4d1774987e472b8bde23.png" title=" Valentina enters '5/10/2019' into Enter Check Out (completed)" width="1366"/>
                 <img src="f7cb851fa5f638ca61dcd2ddb99347759620c2c2b0de4d1774987e472b8bde23.png" title=" Valentina clicks on Perform Search" width="1366"/>
-                <img src="5923660e312939d3a3170ace9770212605aede384ff95064640de3f3f15a6c1d.png" title=" Valentina clicks on Perform Search (completed)" width="1366"/>
-                <img src="5923660e312939d3a3170ace9770212605aede384ff95064640de3f3f15a6c1d.png" title=" Valentina data reserver (completed)" width="1366"/>
-                <img src="5923660e312939d3a3170ace9770212605aede384ff95064640de3f3f15a6c1d.png" title=" Given that valentina wants reserve a hotel in &quot;Los Angeles&quot;, she selects to the dates  &quot;5/05/2019&quot; and &quot;5/10/2019&quot; (completed)" width="1366"/>
-                <img src="5923660e312939d3a3170ace9770212605aede384ff95064640de3f3f15a6c1d.png" title=" When valentina search the hotel more economical" width="1366"/>
-                <img src="5923660e312939d3a3170ace9770212605aede384ff95064640de3f3f15a6c1d.png" title=" Valentina save result search" width="1366"/>
+                <img src="df44ee15c754fd68d35dbb10af40392a1fd56ee63a55321cdeb34cbdc5583af3.png" title=" Valentina clicks on Perform Search (completed)" width="1366"/>
+                <img src="df44ee15c754fd68d35dbb10af40392a1fd56ee63a55321cdeb34cbdc5583af3.png" title=" Valentina data reserver (completed)" width="1366"/>
+                <img src="df44ee15c754fd68d35dbb10af40392a1fd56ee63a55321cdeb34cbdc5583af3.png" title=" Given that valentina wants reserve a hotel in &quot;Los Angeles&quot;, she selects to the dates  &quot;5/05/2019&quot; and &quot;5/10/2019&quot; (completed)" width="1366"/>
+                <img src="df44ee15c754fd68d35dbb10af40392a1fd56ee63a55321cdeb34cbdc5583af3.png" title=" When valentina search the hotel more economical" width="1366"/>
+                <img src="df44ee15c754fd68d35dbb10af40392a1fd56ee63a55321cdeb34cbdc5583af3.png" title=" Valentina save result search" width="1366"/>
                 <img src="d8698110424258d4092aad1bc0d9ff9e3df4eeef7fafb73b5a4ff57c2e77278a.png" title=" Valentina save result search (completed)" width="1366"/>
                 <img src="d8698110424258d4092aad1bc0d9ff9e3df4eeef7fafb73b5a4ff57c2e77278a.png" title=" Valentina choose the hotel" width="1366"/>
                 <img src="d8698110424258d4092aad1bc0d9ff9e3df4eeef7fafb73b5a4ff57c2e77278a.png" title=" Valentina clicks on Button Book it" width="1366"/>
-                <img src="fa6a12693c4b5136e45ac4e60b9db9d9139beb4208550b4f6f0f408a707f66bc.png" title=" Valentina clicks on Button Book it (completed)" width="1366"/>
-                <img src="fa6a12693c4b5136e45ac4e60b9db9d9139beb4208550b4f6f0f408a707f66bc.png" title=" Valentina choose the hotel (completed)" width="1366"/>
-                <img src="fa6a12693c4b5136e45ac4e60b9db9d9139beb4208550b4f6f0f408a707f66bc.png" title=" When valentina search the hotel more economical (completed)" width="1366"/>
-                <img src="fa6a12693c4b5136e45ac4e60b9db9d9139beb4208550b4f6f0f408a707f66bc.png" title=" Then she selects the most economical option &quot;29&quot;" width="1366"/>
-                <img src="fa6a12693c4b5136e45ac4e60b9db9d9139beb4208550b4f6f0f408a707f66bc.png" title=" Then she selects the most economical option &quot;29&quot; (completed)" width="1366"/>
-                <img src="fa6a12693c4b5136e45ac4e60b9db9d9139beb4208550b4f6f0f408a707f66bc.png" title=" Example #2: {location=&quot;Los Angeles&quot;, check-in=&quot;5/05/2019&quot;, check-out=&quot;5/10/2019&quot;, totalPay=&quot;29&quot;} (completed)" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Example #3: {location=&quot;San Francisco&quot;, check-in=&quot;5/05/2019&quot;, check-out=&quot;5/10/2019&quot;, totalPay=&quot;59&quot;}" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Given that valentina wants reserve a hotel in &quot;San Francisco&quot;, she selects to the dates  &quot;5/05/2019&quot; and &quot;5/10/2019&quot;" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Valentina open the browser" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Valentina opens the Dx hotel home" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina opens the Dx hotel home (completed)" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina open the browser (completed)" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina data reserver" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina clicks on Location List" width="1366"/>
-                <img src="fab144320fdfd85b8051d292f59fd9ca892ae8b4736266d9e6de3e6ec6937bff.png" title=" Valentina clicks on Location List (completed)" width="1366"/>
-                <img src="fab144320fdfd85b8051d292f59fd9ca892ae8b4736266d9e6de3e6ec6937bff.png" title=" Valentina clicks on Select Option Location" width="1366"/>
-                <img src="5ca53ae2268db70d87fa3d273d3e25e34b975454b32d63fb8c807ef06d2fcaf1.png" title=" Valentina clicks on Select Option Location (completed)" width="1366"/>
-                <img src="5ca53ae2268db70d87fa3d273d3e25e34b975454b32d63fb8c807ef06d2fcaf1.png" title=" Valentina enters '5/05/2019' into Enter Check In" width="1366"/>
-                <img src="4d4601ccd18a5596363f619d2d9b6ee3e8fa988163f88176061e45885a6f57ed.png" title=" Valentina enters '5/05/2019' into Enter Check In (completed)" width="1366"/>
-                <img src="4d4601ccd18a5596363f619d2d9b6ee3e8fa988163f88176061e45885a6f57ed.png" title=" Valentina clicks on Enter Check Out" width="1366"/>
-                <img src="a635506532a2b066b3ea6fe251ce637cbebb55dabdba746f83cf78d5f7ec195d.png" title=" Valentina clicks on Enter Check Out (completed)" width="1366"/>
-                <img src="a635506532a2b066b3ea6fe251ce637cbebb55dabdba746f83cf78d5f7ec195d.png" title=" Valentina enters '5/10/2019' into Enter Check Out" width="1366"/>
-                <img src="3664620055f2066ba9894117a68b03b95e8c524f7c15315f540a8f665659e88b.png" title=" Valentina enters '5/10/2019' into Enter Check Out (completed)" width="1366"/>
-                <img src="3664620055f2066ba9894117a68b03b95e8c524f7c15315f540a8f665659e88b.png" title=" Valentina clicks on Perform Search" width="1366"/>
-                <img src="d73514dacca9b44401c1abc513292ccc648e49aa94cbfd4eabde0cc76db57012.png" title=" Valentina clicks on Perform Search (completed)" width="1366"/>
-                <img src="d73514dacca9b44401c1abc513292ccc648e49aa94cbfd4eabde0cc76db57012.png" title=" Valentina data reserver (completed)" width="1366"/>
-                <img src="d73514dacca9b44401c1abc513292ccc648e49aa94cbfd4eabde0cc76db57012.png" title=" Given that valentina wants reserve a hotel in &quot;San Francisco&quot;, she selects to the dates  &quot;5/05/2019&quot; and &quot;5/10/2019&quot; (completed)" width="1366"/>
-                <img src="d73514dacca9b44401c1abc513292ccc648e49aa94cbfd4eabde0cc76db57012.png" title=" When valentina search the hotel more economical" width="1366"/>
-                <img src="d73514dacca9b44401c1abc513292ccc648e49aa94cbfd4eabde0cc76db57012.png" title=" Valentina save result search" width="1366"/>
-                <img src="a79737e59d40578bf3befdaa2c4c1c59ca64ba3710f8c3dc8aac752afd54d4fa.png" title=" Valentina clicks on Next Button" width="1366"/>
-                <img src="d0e15c42827d06209a2b8aadf446f4b2897ed987e06b360bb05f56b851e6e701.png" title=" Valentina clicks on Next Button (completed)" width="1366"/>
-                <img src="aacea230733733c0119e19331ef986dd1316ba84bbb7a5da46de8552dfd0f161.png" title=" Valentina clicks on Next Button" width="1366"/>
-                <img src="c20a0f9b20b262ad40d352ffd8155ef13112225b63cbe29e02a5c31ba223f8e1.png" title=" Valentina clicks on Next Button (completed)" width="1366"/>
-                <img src="56a9a40c492f186ceb164785ba29f485b7303f75656e05953ce8317451aa2fd9.png" title=" Valentina save result search (completed)" width="1366"/>
-                <img src="56a9a40c492f186ceb164785ba29f485b7303f75656e05953ce8317451aa2fd9.png" title=" Valentina choose the hotel" width="1366"/>
-                <img src="56a9a40c492f186ceb164785ba29f485b7303f75656e05953ce8317451aa2fd9.png" title=" Valentina clicks on Button Book it" width="1366"/>
-                <img src="15e2048209cc8a253a5c3ba92d15c316f961ac41f48301a4986f53b065e27cd3.png" title=" Valentina clicks on Button Book it (completed)" width="1366"/>
-                <img src="15e2048209cc8a253a5c3ba92d15c316f961ac41f48301a4986f53b065e27cd3.png" title=" Valentina choose the hotel (completed)" width="1366"/>
-                <img src="15e2048209cc8a253a5c3ba92d15c316f961ac41f48301a4986f53b065e27cd3.png" title=" When valentina search the hotel more economical (completed)" width="1366"/>
-                <img src="15e2048209cc8a253a5c3ba92d15c316f961ac41f48301a4986f53b065e27cd3.png" title=" Then she selects the most economical option &quot;59&quot;" width="1366"/>
-                <img src="15e2048209cc8a253a5c3ba92d15c316f961ac41f48301a4986f53b065e27cd3.png" title=" Example #3: {location=&quot;San Francisco&quot;, check-in=&quot;5/05/2019&quot;, check-out=&quot;5/10/2019&quot;, totalPay=&quot;59&quot;} (completed)" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Example #4: {location=&quot;Las Vegas&quot;, check-in=&quot;5/05/2019&quot;, check-out=&quot;5/10/2019&quot;, totalPay=&quot;59&quot;}" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Given that valentina wants reserve a hotel in &quot;Las Vegas&quot;, she selects to the dates  &quot;5/05/2019&quot; and &quot;5/10/2019&quot;" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Valentina open the browser" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Valentina opens the Dx hotel home" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina opens the Dx hotel home (completed)" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina open the browser (completed)" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina data reserver" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina clicks on Location List" width="1366"/>
-                <img src="fab144320fdfd85b8051d292f59fd9ca892ae8b4736266d9e6de3e6ec6937bff.png" title=" Valentina clicks on Location List (completed)" width="1366"/>
-                <img src="fab144320fdfd85b8051d292f59fd9ca892ae8b4736266d9e6de3e6ec6937bff.png" title=" Valentina clicks on Select Option Location" width="1366"/>
-                <img src="a051d68dedab4c5bc6d89380ebcce2f516e49782a33d815074a61d8a5b549075.png" title=" Valentina clicks on Select Option Location (completed)" width="1366"/>
-                <img src="a051d68dedab4c5bc6d89380ebcce2f516e49782a33d815074a61d8a5b549075.png" title=" Valentina enters '5/05/2019' into Enter Check In" width="1366"/>
-                <img src="770e5aa29bfbbc43225e8bd89cfe8357b60f74fd5c1375e7f1ddd2594bac2c74.png" title=" Valentina enters '5/05/2019' into Enter Check In (completed)" width="1366"/>
-                <img src="770e5aa29bfbbc43225e8bd89cfe8357b60f74fd5c1375e7f1ddd2594bac2c74.png" title=" Valentina clicks on Enter Check Out" width="1366"/>
-                <img src="0ce39f15229d2030c5a96c87394bd4f4bce2e004c15de961293204c984fb0d49.png" title=" Valentina clicks on Enter Check Out (completed)" width="1366"/>
-                <img src="0ce39f15229d2030c5a96c87394bd4f4bce2e004c15de961293204c984fb0d49.png" title=" Valentina enters '5/10/2019' into Enter Check Out" width="1366"/>
-                <img src="4f50b705f20afd7d31cca00f8c826e02648efa1ce7ce311efe30ae7b03300237.png" title=" Valentina enters '5/10/2019' into Enter Check Out (completed)" width="1366"/>
-                <img src="4f50b705f20afd7d31cca00f8c826e02648efa1ce7ce311efe30ae7b03300237.png" title=" Valentina clicks on Perform Search" width="1366"/>
-                <img src="08ffb8d99cc4871acee5784a42d3a34a3ad9d2c480d6611b92da8d0ec187f6eb.png" title=" Valentina clicks on Perform Search (completed)" width="1366"/>
-                <img src="08ffb8d99cc4871acee5784a42d3a34a3ad9d2c480d6611b92da8d0ec187f6eb.png" title=" Valentina data reserver (completed)" width="1366"/>
-                <img src="08ffb8d99cc4871acee5784a42d3a34a3ad9d2c480d6611b92da8d0ec187f6eb.png" title=" Given that valentina wants reserve a hotel in &quot;Las Vegas&quot;, she selects to the dates  &quot;5/05/2019&quot; and &quot;5/10/2019&quot; (completed)" width="1366"/>
-                <img src="08ffb8d99cc4871acee5784a42d3a34a3ad9d2c480d6611b92da8d0ec187f6eb.png" title=" When valentina search the hotel more economical" width="1366"/>
-                <img src="08ffb8d99cc4871acee5784a42d3a34a3ad9d2c480d6611b92da8d0ec187f6eb.png" title=" Valentina save result search" width="1366"/>
-                <img src="22382c37f86ea658bf26146282d06ea827053ae8018ac8a2173d694cb8cad61e.png" title=" Valentina clicks on Next Button" width="1366"/>
-                <img src="0a58cd4c7c4d18d9ef229cbbe8189699e84fe6bf0a331dff77c862e58d84dcff.png" title=" Valentina clicks on Next Button (completed)" width="1366"/>
-                <img src="4ac0925542b628b42013104eebad49044d8ff2506c205af482ef78b7f33dc4ef.png" title=" Valentina clicks on Next Button" width="1366"/>
-                <img src="56ba16dbe0c916ca80912281150d4a3b594a7ae5dedc44fe6f2e1986a5a40264.png" title=" Valentina clicks on Next Button (completed)" width="1366"/>
-                <img src="56ba16dbe0c916ca80912281150d4a3b594a7ae5dedc44fe6f2e1986a5a40264.png" title=" Valentina save result search (completed)" width="1366"/>
-                <img src="56ba16dbe0c916ca80912281150d4a3b594a7ae5dedc44fe6f2e1986a5a40264.png" title=" Valentina choose the hotel" width="1366"/>
-                <img src="56ba16dbe0c916ca80912281150d4a3b594a7ae5dedc44fe6f2e1986a5a40264.png" title=" Valentina clicks on Next Button" width="1366"/>
-                <img src="4ac0925542b628b42013104eebad49044d8ff2506c205af482ef78b7f33dc4ef.png" title=" Valentina clicks on Next Button (completed)" width="1366"/>
-                <img src="4ac0925542b628b42013104eebad49044d8ff2506c205af482ef78b7f33dc4ef.png" title=" Valentina choose the hotel (completed)" width="1366"/>
-                <img src="4ac0925542b628b42013104eebad49044d8ff2506c205af482ef78b7f33dc4ef.png" title=" When valentina search the hotel more economical (completed)" width="1366"/>
-                <img src="4ac0925542b628b42013104eebad49044d8ff2506c205af482ef78b7f33dc4ef.png" title=" Then she selects the most economical option &quot;59&quot;" width="1366"/>
-                <img src="4ac0925542b628b42013104eebad49044d8ff2506c205af482ef78b7f33dc4ef.png" title=" Example #4: {location=&quot;Las Vegas&quot;, check-in=&quot;5/05/2019&quot;, check-out=&quot;5/10/2019&quot;, totalPay=&quot;59&quot;}" width="1366"/>
-                <img src="4ac0925542b628b42013104eebad49044d8ff2506c205af482ef78b7f33dc4ef.png" title=" Then she selects the most economical option &quot;59&quot; (completed)" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Example #5: {location=&quot;Honolulu&quot;, check-in=&quot;5/05/2019&quot;, check-out=&quot;5/10/2019&quot;, totalPay=&quot;59&quot;}" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Given that valentina wants reserve a hotel in &quot;Honolulu&quot;, she selects to the dates  &quot;5/05/2019&quot; and &quot;5/10/2019&quot;" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Valentina open the browser" width="1366"/>
-                <img src="0fa0547c6214d10f336dbf2145140a0eccd32c80ed7bd25386014a4227efbf51.png" title=" Valentina opens the Dx hotel home" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina opens the Dx hotel home (completed)" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina open the browser (completed)" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina data reserver" width="1366"/>
-                <img src="d9c368a80866ff2749e5c96e1bd8619dbf1e3c5dfb53ef2810ff454c35680885.png" title=" Valentina clicks on Location List" width="1366"/>
-                <img src="fab144320fdfd85b8051d292f59fd9ca892ae8b4736266d9e6de3e6ec6937bff.png" title=" Valentina clicks on Location List (completed)" width="1366"/>
-                <img src="fab144320fdfd85b8051d292f59fd9ca892ae8b4736266d9e6de3e6ec6937bff.png" title=" Valentina clicks on Select Option Location" width="1366"/>
-                <img src="7498a48cb2ba896781f6c7d8fcad7b4ac0a855a6d3ec876d1cb76b787412020b.png" title=" Valentina clicks on Select Option Location (completed)" width="1366"/>
-                <img src="7498a48cb2ba896781f6c7d8fcad7b4ac0a855a6d3ec876d1cb76b787412020b.png" title=" Valentina enters '5/05/2019' into Enter Check In" width="1366"/>
-                <img src="0ff95c7c1f356c47be630ba76e7336fd6c3006c0079c42f29545748f746f53fb.png" title=" Valentina enters '5/05/2019' into Enter Check In (completed)" width="1366"/>
-                <img src="0ff95c7c1f356c47be630ba76e7336fd6c3006c0079c42f29545748f746f53fb.png" title=" Valentina clicks on Enter Check Out" width="1366"/>
-                <img src="ebc05990d4a957b008b4ed70da10a2f24b30a01a5367efffed4ad652c9e768d6.png" title=" Valentina clicks on Enter Check Out (completed)" width="1366"/>
-                <img src="ebc05990d4a957b008b4ed70da10a2f24b30a01a5367efffed4ad652c9e768d6.png" title=" Valentina enters '5/10/2019' into Enter Check Out" width="1366"/>
-                <img src="6b11c246f9583a4150cb2e84720a6f76a15de664d2ab2a5d8892ac9630b7ac2b.png" title=" Valentina enters '5/10/2019' into Enter Check Out (completed)" width="1366"/>
-                <img src="6b11c246f9583a4150cb2e84720a6f76a15de664d2ab2a5d8892ac9630b7ac2b.png" title=" Valentina clicks on Perform Search" width="1366"/>
-                <img src="e8f346f45a7517479259110d6406d61877644fc761feae7bb3654e8a55a6e4f2.png" title=" Valentina clicks on Perform Search (completed)" width="1366"/>
-                <img src="e8f346f45a7517479259110d6406d61877644fc761feae7bb3654e8a55a6e4f2.png" title=" Valentina data reserver (completed)" width="1366"/>
-                <img src="e8f346f45a7517479259110d6406d61877644fc761feae7bb3654e8a55a6e4f2.png" title=" Given that valentina wants reserve a hotel in &quot;Honolulu&quot;, she selects to the dates  &quot;5/05/2019&quot; and &quot;5/10/2019&quot; (completed)" width="1366"/>
-                <img src="e8f346f45a7517479259110d6406d61877644fc761feae7bb3654e8a55a6e4f2.png" title=" When valentina search the hotel more economical" width="1366"/>
-                <img src="e8f346f45a7517479259110d6406d61877644fc761feae7bb3654e8a55a6e4f2.png" title=" Valentina save result search" width="1366"/>
-                <img src="67fb7a0b96ae01214da15b251c7fa556017fbdd38457fe4ac0bac39d6e8b3826.png" title=" Valentina clicks on Next Button" width="1366"/>
-                <img src="57342984adeb2eeb511decb92b1d312d1062d3135905fa5f7f4919941dfbfbb0.png" title=" Valentina clicks on Next Button (completed)" width="1366"/>
-                <img src="9980f1459df12e9fb6785343b3e987a3c0a1b60e191dce9787eb7c85a3e1c33f.png" title=" Valentina clicks on Next Button" width="1366"/>
-                <img src="ad09969c0d232fa7428993108ff4cd346381a09bc7965cfd4a75ded89470dce8.png" title=" Valentina clicks on Next Button (completed)" width="1366"/>
-                <img src="d8ce85ddb4d440402b024d12a141e6817598e945175062ba1127d0ad4f45ed24.png" title=" Valentina save result search (completed)" width="1366"/>
-                <img src="d8ce85ddb4d440402b024d12a141e6817598e945175062ba1127d0ad4f45ed24.png" title=" Valentina choose the hotel" width="1366"/>
-                <img src="d8ce85ddb4d440402b024d12a141e6817598e945175062ba1127d0ad4f45ed24.png" title=" Valentina clicks on Next Button" width="1366"/>
-                <img src="9980f1459df12e9fb6785343b3e987a3c0a1b60e191dce9787eb7c85a3e1c33f.png" title=" Valentina clicks on Next Button (completed)" width="1366"/>
-                <img src="9980f1459df12e9fb6785343b3e987a3c0a1b60e191dce9787eb7c85a3e1c33f.png" title=" Valentina choose the hotel (completed)" width="1366"/>
-                <img src="9980f1459df12e9fb6785343b3e987a3c0a1b60e191dce9787eb7c85a3e1c33f.png" title=" When valentina search the hotel more economical (completed)" width="1366"/>
-                <img src="9980f1459df12e9fb6785343b3e987a3c0a1b60e191dce9787eb7c85a3e1c33f.png" title=" Then she selects the most economical option &quot;59&quot;" width="1366"/>
-                <img src="9980f1459df12e9fb6785343b3e987a3c0a1b60e191dce9787eb7c85a3e1c33f.png" title=" Example #5: {location=&quot;Honolulu&quot;, check-in=&quot;5/05/2019&quot;, check-out=&quot;5/10/2019&quot;, totalPay=&quot;59&quot;}" width="1366"/>
-                <img src="9980f1459df12e9fb6785343b3e987a3c0a1b60e191dce9787eb7c85a3e1c33f.png" title=" Then she selects the most economical option &quot;59&quot; (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="7e1e124ced7ed0fe15d77c30370789145bcf08e12f3f6cca232176ee567a1e91.png" title=" Valentina clicks on Button Book it (completed)" width="1366"/>
+                <img src="7e1e124ced7ed0fe15d77c30370789145bcf08e12f3f6cca232176ee567a1e91.png" title=" Valentina choose the hotel (completed)" width="1366"/>
+                <img src="7e1e124ced7ed0fe15d77c30370789145bcf08e12f3f6cca232176ee567a1e91.png" title=" When valentina search the hotel more economical (completed)" width="1366"/>
+                <img src="7e1e124ced7ed0fe15d77c30370789145bcf08e12f3f6cca232176ee567a1e91.png" title=" Then she selects the most economical option &quot;29&quot;" width="1366"/>
+                <img src="fa6a12693c4b5136e45ac4e60b9db9d9139beb4208550b4f6f0f408a707f66bc.png" title=" Then reserver should be (a collection containing '29')" width="1366"/>
+                <img src="fa6a12693c4b5136e45ac4e60b9db9d9139beb4208550b4f6f0f408a707f66bc.png" title=" Then reserver should be (a collection containing '29') (completed): <span class='failing-color'>FAILURE</span>" width="1366"/>
             </div>
         </div>
 

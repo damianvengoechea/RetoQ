@@ -26,15 +26,7 @@ public class UtilString {
 	        String part1 = partString[0];
 	        return Integer.parseInt(part1);
 	    }
-	    
-	    public int splitTotalPayNow(String totalPayNow){
-	        String[] partString = totalPayNow.split(" .");
-	        String part1 = partString[0];
-	        String part2 = partString[1];
-	        log.info(part2 + part1);
-	        return Integer.parseInt(part2);
-	    }	    
-	    
+	    	    
 	    public String valueInList(List<Integer> priceHotels){
 	        int value = priceHotels.get(0);
 	        int position = 0;
