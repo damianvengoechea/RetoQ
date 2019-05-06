@@ -32,7 +32,7 @@ public class DataReserver implements Task {
 		actor.wasAbleTo(Click.on(HotelSearch.ENTER_CHECK_OUT));
 		actor.wasAbleTo(Enter.theValue(checkOut).into(HotelSearch.ENTER_CHECK_OUT));
 		actor.wasAbleTo(Click.on(HotelSearch.BUTTON_SEARCH));
-		log.info(location);
+		log.info("---- " + location + " ----");
 		actor.remember(HotelSearch.NAME_CITY_CONSTANT, location);
 	}
 	
