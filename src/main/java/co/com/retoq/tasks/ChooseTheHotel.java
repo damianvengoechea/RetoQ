@@ -36,15 +36,7 @@ public class ChooseTheHotel implements Task{
                 )
                 
         );
-				
-		/*String totalpago = ReservationSummary.TOTAL_PAY_NOW.resolveFor(actor).getText();
-		String[] partOfString = totalpago.split(Pattern.quote("."));
-		String part1 = partOfString[0];
-		String[] total= part1.split("\\$");
-		String part2= total[1];	
-        log.info("esto es " + part1);
-		log.info(part2);*/
-		
+						
 	}
 
 	public static ChooseTheHotel moreEconomical() {	

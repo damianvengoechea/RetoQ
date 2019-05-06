@@ -1,1 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="reservation portal of DX Hotel" skipped="0" tests="1" time="31.54" timestamp="2019-05-05 05:28:14"><testcase name="Select the cheapest hotel of a selected location"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="reservation portal of DX Hotel" skipped="0" tests="3" time="76.13" timestamp="2019-05-05 07:08:27"><testcase name="Select the cheapest hotel of a selected location"><error message="Expected condition failed: waiting for By.xpath: //div[@class='sum']/h4 to be displayed (tried for 5 second(s) with 100 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: '3RO-PQVIS8FDX5L', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'&#10;Driver info: driver.version: unknown" type="java.lang.AssertionError">Expected condition failed: waiting for By.xpath: //div[@class='sum']/h4 to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '3RO-PQVIS8FDX5L', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: unknown</error><system-err>Expected condition failed: waiting for By.xpath: //div[@class='sum']/h4 to be displayed (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '3RO-PQVIS8FDX5L', ip: '192.168.1.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: driver.version: unknown&#13;
+co.com.retoq.stepdefinitions.ReservationStepDefinition.sheSelectsTheMostEconomicalOption(ReservationStepDefinition.java:50)&#13;
+✽.she selects the most economical option "174"(src/test/resources/features/reserva_hotelera.feature:10)&#13;
+</system-err></testcase></testsuite>

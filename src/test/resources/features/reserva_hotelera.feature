@@ -12,7 +12,7 @@ Feature: reservation portal of DX Hotel
     Examples:
     	|location	 |check-in	 |check-out	 |totalPay|
 	#		|"New York"|"5/05/2019"|"5/10/2019"|"59"	|
-	#		|"Los Angeles"|"5/05/2019"|"5/10/2019"|"654" 		|
+			|"Los Angeles"|"5/05/2019"|"5/10/2019"|"654" 		|
 			|"San Francisco"|"5/05/2019"|"5/10/2019"|"666"	|
 			|"Las Vegas"|"5/05/2019"|"5/10/2019"|"174"	|
 			|"Honolulu"|"5/05/2019"|"5/10/2019"|"594"	|
