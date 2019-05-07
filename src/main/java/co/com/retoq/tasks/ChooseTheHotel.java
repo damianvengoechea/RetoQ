@@ -10,7 +10,6 @@ import co.com.retoq.userinterfaces.SearchReserver;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.conditions.Check;
 
 public class ChooseTheHotel implements Task{
 	
@@ -21,23 +20,27 @@ public class ChooseTheHotel implements Task{
 						
 		String nameHotel = actor.recall(ResultSearch.NAME_HOTEL_CONSTANT);
 		String priceMoreEconomical = actor.recall(ResultSearch.PRICE_HOTEL_CONSTANT);
-		String nameCity = actor.recall(HotelSearch.NAME_CITY_CONSTANT);
-		
+		String nameCity = actor.recall(HotelSearch.NAME_CITY_CONSTANT);		
 		
 		log.info("In " + nameCity);
 		log.info("The Hotel more economical is " + nameHotel);
 		log.info("this price is " + priceMoreEconomical);
 		log.info("......................");
-		actor.attemptsTo(
-                Check.whether(SearchReserver.MAIN_HOTEL_NAME.of(nameHotel).resolveFor(actor).isVisible()).andIfSo(
-                        Click.on(SearchReserver.BUTTON_BOOK_IT.of(nameHotel))
-                ).otherwise(
-                        Click.on(ResultSearch.BACK_BUTTON)
-                )
-                
-        );
-						
-	}
+							
+		if(SearchReserver.MAIN_HOTEL_NAME.of(String.valueOf(nameHotel)).resolveFor(actor).isPresent()) {
+			actor.attemptsTo(Click.on(SearchReserver.BUTTON_BOOK_IT.of(nameHotel)));			
+		}else {
+				actor.attemptsTo(Click.on(ResultSearch.PAG_ONE));
+			if(SearchReserver.MAIN_HOTEL_NAME.of(String.valueOf(nameHotel)).resolveFor(actor).isPresent()) {
+				actor.attemptsTo(Click.on(SearchReserver.BUTTON_BOOK_IT.of(nameHotel)));
+			}else {
+				while(!SearchReserver.MAIN_HOTEL_NAME.of(String.valueOf(nameHotel)).resolveFor(actor).isPresent()) {
+					actor.wasAbleTo(Click.on(ResultSearch.NEXT_BUTTON));
+				}				
+				actor.attemptsTo(Click.on(SearchReserver.BUTTON_BOOK_IT.of(nameHotel)));				
+			}
+		}
+	}						
 
 	public static ChooseTheHotel moreEconomical() {	
 		return instrumented(ChooseTheHotel.class);

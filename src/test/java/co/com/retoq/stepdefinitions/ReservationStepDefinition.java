@@ -1,10 +1,8 @@
 package co.com.retoq.stepdefinitions;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
-import static org.hamcrest.CoreMatchers.equalTo;
 
 import org.openqa.selenium.WebDriver;
-
 import co.com.retoq.questions.Reserver;
 import co.com.retoq.tasks.ChooseTheHotel;
 import co.com.retoq.tasks.DataReserver;
@@ -17,6 +15,7 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
+import static org.hamcrest.CoreMatchers.equalTo;
 
 public class ReservationStepDefinition {
 
@@ -48,7 +47,6 @@ public class ReservationStepDefinition {
 	@Then("^she selects the most economical option \"([^\"]*)\"$")
 	public void sheSelectsTheMostEconomicalOption(String totalPay) {
 		valentina.should(seeThat(Reserver.totalPayNow(totalPay),equalTo((totalPay))));
-		
 	  
 	}
 
