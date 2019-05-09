@@ -31,7 +31,6 @@ public class ReservationStepDefinition {
 	
 	@Given("^that valentina wants reserve a hotel in \"([^\"]*)\", she selects to the dates  \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void thatValentinaWantsReserveAHotelInSheSelectsToTheDatesAnd(String location, String checkIn, String checkOut) {
-		herBrowser.manage().window().maximize();
 		valentina.wasAbleTo(OpenTheBrowser.on());
 		valentina.wasAbleTo(DataReserver.locationList(location, checkIn, checkOut));
 		
@@ -44,7 +43,7 @@ public class ReservationStepDefinition {
 	    		);
 	}	
 	
-	@Then("^she selects the most economical option \"([^\"]*)\"$")
+	@Then("^she selects the most economical option (.*)$")
 	public void sheSelectsTheMostEconomicalOption(String totalPay) {
 		valentina.should(seeThat(Reserver.totalPayNow(totalPay),equalTo((totalPay))));
 	  
