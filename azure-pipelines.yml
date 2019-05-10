@@ -2,6 +2,15 @@
 - task: Gradle@2
   inputs:
     gradleWrapperFile: 'gradlew'
+    workingDirectory: 'master'
+    tasks: 'build'
+    publishJUnitResults: true
+    testResultsFiles: '**/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    sonarQubeRunAnalysis: false
+- task: Gradle@2
+  inputs:
+    gradleWrapperFile: 'gradlew'
     workingDirectory: 'RetoQ/'
     tasks: 'build'
     publishJUnitResults: true
